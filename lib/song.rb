@@ -34,7 +34,15 @@ class Song
       g[genre] = g[genre] + 1
     end
     g
+  end
 
+  def self.artist_count
+    a = {}
+    @@artist_count do |artist|
+      a[artist] = 0 is a[artist].nil?
+      a[artist] = a[artist] +1
+    end
+    a
   end
 
 end
